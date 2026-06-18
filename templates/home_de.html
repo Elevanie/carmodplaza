@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarModPlaza | Aufbereitung & KFZ Werkstatt</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="{% url 'home_de' %}">
+            <img src="{% static 'images/logo.png' %}" alt="CarModPlaza Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#services">Leistungen</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+         
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>CarModPlaza</h1>
+            <p>
+                Professionelle Fahrzeugaufbereitung, KFZ Werkstatt,
+                Reifenservice, Folierung, Schlüsselservice und vieles mehr.
+            </p>
+            <a href="#contact" class="btn">Jetzt Termin vereinbaren</a>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Unsere Leistungen</h2>
+
+        <div class="services-grid">
+
+            <a href="#gallery" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/exterior-wash.png' %}" alt="Aufwertung und Pflege">
+                    <h3>Aufwertung & Pflege</h3>
+                    <p>Außenreinigung, Innenreinigung, Politur, Keramikversiegelung und Fahrzeugpflege.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+            <a href="#gallery" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/inspection.png' %}" alt="KFZ Werkstatt">
+                    <h3>KFZ Werkstatt</h3>
+                    <p>Inspektion, Ölwechsel, Bremsen-Service, Diagnose und Reparaturen.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+            <a href="#tire-service" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
+                    <h3>Reifenservice</h3>
+                    <p>Reifenwechsel, Reifenmontage und Auswuchten.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+            <a href="#wrapping" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
+                    <h3>Folierung</h3>
+                    <p>Professionelle Fahrzeugfolierung, Designfolien und Schutzfolien.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+            <a href="#key-service" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
+                    <h3>Schlüsselservice</h3>
+                    <p>Autoschlüssel, Ersatzschlüssel und Schlüsselprogrammierung.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+            <a href="#car-appraisal" class="service-link">
+                <div class="card">
+                    <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
+                    <h3>KFZ Gutachten</h3>
+                    <p>Fahrzeugbewertung, Unfallgutachten und Schadengutachten.</p>
+                    <span class="more-btn">Bilder ansehen</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="container">
+        <h2>Galerie</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item" id="exterior-wash">
+                <img src="{% static 'images/gallery/exterior-wash.png' %}" alt="Außenreinigung">
+                <h3>Außenreinigung</h3>
+            </div>
+
+            <div class="gallery-item" id="interior-cleaning">
+                <img src="{% static 'images/gallery/interior-cleaning.png' %}" alt="Innenreinigung">
+                <h3>Innenreinigung</h3>
+            </div>
+
+            <div class="gallery-item" id="polishing">
+                <img src="{% static 'images/gallery/polishing.png' %}" alt="Politur">
+                <h3>Politur</h3>
+            </div>
+
+            <div class="gallery-item" id="ceramic-coating">
+                <img src="{% static 'images/gallery/ceramic-coating.png' %}" alt="Keramikversiegelung">
+                <h3>Keramikversiegelung</h3>
+            </div>
+
+            <div class="gallery-item" id="inspection">
+                <img src="{% static 'images/gallery/inspection.png' %}" alt="Inspektion">
+                <h3>Inspektion</h3>
+            </div>
+
+            <div class="gallery-item" id="oil-change">
+                <img src="{% static 'images/gallery/oil-change.png' %}" alt="Ölwechsel">
+                <h3>Ölwechsel</h3>
+            </div>
+
+            <div class="gallery-item" id="brake-service">
+                <img src="{% static 'images/gallery/brake-service.png' %}" alt="Bremsen-Service">
+                <h3>Bremsen-Service</h3>
+            </div>
+
+            <div class="gallery-item" id="tire-service">
+                <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
+                <h3>Reifenservice</h3>
+            </div>
+
+            <div class="gallery-item" id="wrapping">
+                <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
+                <h3>Folierung</h3>
+            </div>
+
+            <div class="gallery-item" id="key-service">
+                <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
+                <h3>Schlüsselservice</h3>
+            </div>
+
+            <div class="gallery-item" id="car-appraisal">
+                <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
+                <h3>KFZ Gutachten</h3>
+            </div>
+
+            <div class="gallery-item" id="repairs">
+                <img src="{% static 'images/gallery/repairs.png' %}" alt="Reparaturen">
+                <h3>Reparaturen</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Kontakt</h2>
+
+        <div class="contact-box">
+            <h3>CarModPlaza</h3>
+
+            <p>
+                Sie möchten einen Termin vereinbaren oder haben Fragen zu unseren
+                Dienstleistungen? Kontaktieren Sie uns direkt.
+            </p>
+
+            <div class="contact-info">
+
+                <div class="contact-row">
+                    <span>📧</span>
+                    <div>
+                        <strong>E-Mail</strong><br>
+                        <a href="mailto:carmodplaza@gmail.com">carmodplaza@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span>📞</span>
+                    <div>
+                        <strong>Telefon</strong><br>
+                        <a href="tel:+4915565708187">+49 155 65708187</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span>📍</span>
+                    <div>
+                        <strong>Adresse</strong><br>
+                        Schillerstraße 3<br>
+                        31812 Bad Pyrmont
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span>📷</span>
+                    <div>
+                        <strong>Instagram</strong><br>
+                        <a href="https://instagram.com/carmodplaza31812" target="_blank">
+                            @carmodplaza31812
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-buttons">
+                <a href="tel:+4915565708187" class="btn">📞 Jetzt anrufen</a>
+                <a href="mailto:carmodplaza@gmail.com" class="btn">📧 E-Mail senden</a>
+                <a href="https://instagram.com/carmodplaza31812" target="_blank" class="btn">📷 Instagram</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CarModPlaza | Aufbereitung | KFZ Werkstatt | Reifenservice | Folierung</p>
+</footer>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
