@@ -29,11 +29,12 @@ SECRET_KEY = 'django-insecure-=e3$vpk1(@&1u!+!04x5jr4oqez2sz$*xlvxun1s@qu*i&2p#_
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "carmodelplaza.de",
-    "www.carmodelplaza.de",
-    ".onrender.com",
+    "carmodplaza.onrender.com",
+    "carmodplaza.de",
+    "www.carmodplaza.de",
+    "localhost",
     "127.0.0.1",
-    "localhost",]
+]
 
 
 # Application definition
