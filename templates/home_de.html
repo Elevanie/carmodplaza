@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarModPlaza | KFZ Werkstatt & Fahrzeugaufbereitung in Bad Pyrmont</title>
+    <title>CarModPlaza | KFZ Werkstatt & Fahrzeugaufbereitung</title>
     <meta name="description" content="CarModPlaza in Bad Pyrmont: Fahrzeugaufbereitung, KFZ Werkstatt, Reifenservice, Folierung, Schlüsselservice und KFZ Gutachten.">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -18,13 +18,13 @@
         </a>
     </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">☰</button>
+    <button class="menu-toggle" id="menuToggle">☰</button>
 
     <nav id="navMenu">
         <ul>
             <li><a href="#home">Startseite</a></li>
+            <li><a href="#about">Über uns</a></li>
             <li><a href="#services">Leistungen</a></li>
-            <li><a href="#gallery">Galerie</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
@@ -40,9 +40,9 @@
             <h1>CarModPlaza</h1>
 
             <p>
-                Professionelle Fahrzeugaufbereitung, zuverlässiger KFZ-Service,
-                Reifenservice, Folierung, Schlüsselservice und KFZ Gutachten
-                in Bad Pyrmont.
+                Ihr professioneller Partner für Fahrzeugaufbereitung,
+                KFZ-Service, Reifenservice, Folierung, Schlüsselservice
+                und KFZ Gutachten in Bad Pyrmont.
             </p>
 
             <div class="hero-buttons">
@@ -53,12 +53,13 @@
     </div>
 </section>
 
-<section class="intro-section">
+<section id="about" class="intro-section">
     <div class="container intro-box">
-        <h2>Premium Service für Ihr Fahrzeug</h2>
+        <h2>Über CarModPlaza</h2>
         <p>
-            Bei CarModPlaza erhalten Sie professionelle Autopflege,
-            moderne Werkstatt-Leistungen und zuverlässige Lösungen rund um Ihr Fahrzeug.
+            Bei CarModPlaza erhalten Sie professionelle Fahrzeugpflege,
+            zuverlässige Werkstatt-Leistungen und moderne Lösungen rund um Ihr Auto.
+            Wir legen Wert auf Qualität, saubere Arbeit und direkten Kontakt mit unseren Kunden.
         </p>
     </div>
 </section>
@@ -69,128 +70,46 @@
 
         <div class="services-grid">
 
-            <a href="#fahrzeugaufbereitung" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/fahrzeugaufbereitung.jpg' %}" alt="Fahrzeugaufbereitung">
-                    <h3>Fahrzeugaufbereitung</h3>
-                    <p>Innenreinigung, Außenreinigung, Politur, Lackpflege und Keramikversiegelung.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-            <a href="#kfz-werkstatt" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/kfz-werkstatt.jpg' %}" alt="KFZ Werkstatt">
-                    <h3>KFZ Werkstatt</h3>
-                    <p>Inspektion, Diagnose, Ölwechsel, Bremsen-Service, Wartung und Reparaturen.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-            <a href="#reifenservice" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
-                    <h3>Reifenservice</h3>
-                    <p>Reifenwechsel, Reifenmontage, Auswuchten und Reifenpflege.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-            <a href="#folierung" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
-                    <h3>Folierung</h3>
-                    <p>Professionelle Fahrzeugfolierung, Designfolien und Schutzfolien.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-            <a href="#schluesselservice" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
-                    <h3>Schlüsselservice</h3>
-                    <p>Autoschlüssel, Ersatzschlüssel, Schlüsselreparatur und Programmierung.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-            <a href="#kfz-gutachten" class="service-link">
-                <div class="card">
-                    <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
-                    <h3>KFZ Gutachten</h3>
-                    <p>Fahrzeugbewertung, Unfallgutachten, Schadengutachten und Kostenvoranschläge.</p>
-                    <span class="more-btn">Mehr ansehen</span>
-                </div>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<section id="gallery">
-    <div class="container">
-        <h2>Galerie</h2>
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item" id="fahrzeugaufbereitung">
-                <img src="{% static 'images/gallery/fahrzeugaufbereitung.png' %}" alt="Fahrzeugaufbereitung">
+            <div class="card">
+                <img src="{% static 'images/gallery/fahrzeugaufbereitung.jpg' %}" alt="Fahrzeugaufbereitung">
                 <h3>Fahrzeugaufbereitung</h3>
+                <p>Außenreinigung, Innenreinigung, Politur, Lackpflege und Keramikversiegelung.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
-            <div class="gallery-item" id="kfz-werkstatt">
-                <img src="{% static 'images/gallery/kfz-werkstatt.png' %}" alt="KFZ Werkstatt">
+            <div class="card">
+                <img src="{% static 'images/gallery/kfz-werkstatt.jpg' %}" alt="KFZ Werkstatt">
                 <h3>KFZ Werkstatt</h3>
+                <p>Inspektion, Diagnose, Ölwechsel, Bremsen-Service, Wartung und Reparaturen.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
-            <div class="gallery-item" id="innenreinigung">
-                <img src="{% static 'images/gallery/interior-cleaning.png' %}" alt="Innenreinigung">
-                <h3>Innenreinigung</h3>
-            </div>
-
-            <div class="gallery-item" id="politur">
-                <img src="{% static 'images/gallery/polishing.png' %}" alt="Politur">
-                <h3>Politur</h3>
-            </div>
-
-            <div class="gallery-item" id="keramikversiegelung">
-                <img src="{% static 'images/gallery/ceramic-coating.png' %}" alt="Keramikversiegelung">
-                <h3>Keramikversiegelung</h3>
-            </div>
-
-            <div class="gallery-item" id="oelwechsel">
-                <img src="{% static 'images/gallery/oil-change.png' %}" alt="Ölwechsel">
-                <h3>Ölwechsel</h3>
-            </div>
-
-            <div class="gallery-item" id="bremsen-service">
-                <img src="{% static 'images/gallery/brake-service.png' %}" alt="Bremsen-Service">
-                <h3>Bremsen-Service</h3>
-            </div>
-
-            <div class="gallery-item" id="reifenservice">
+            <div class="card">
                 <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
                 <h3>Reifenservice</h3>
+                <p>Reifenwechsel, Reifenmontage, Auswuchten, Sommerreifen und Winterreifen.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
-            <div class="gallery-item" id="folierung">
+            <div class="card">
                 <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
                 <h3>Folierung</h3>
+                <p>Vollfolierung, Teilfolierung, Designfolien, Schutzfolie und Scheibentönung.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
-            <div class="gallery-item" id="schluesselservice">
+            <div class="card">
                 <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
                 <h3>Schlüsselservice</h3>
+                <p>Autoschlüssel, Ersatzschlüssel, Schlüsselreparatur und Programmierung.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
-            <div class="gallery-item" id="kfz-gutachten">
+            <div class="card">
                 <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
                 <h3>KFZ Gutachten</h3>
-            </div>
-
-            <div class="gallery-item" id="reparaturen">
-                <img src="{% static 'images/gallery/repairs.png' %}" alt="Reparaturen">
-                <h3>Reparaturen</h3>
+                <p>Unfallgutachten, Fahrzeugbewertung, Schadengutachten und Kostenvoranschläge.</p>
+                <a href="tel:+4915565708187" class="more-btn">Termin anfragen</a>
             </div>
 
         </div>
