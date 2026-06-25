@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarModPlaza | KFZ Werkstatt & Fahrzeugaufbereitung</title>
+    <title>CarModPlaza | KFZ Werkstatt & Fahrzeugaufbereitung in Bad Pyrmont</title>
+    <meta name="description" content="CarModPlaza in Bad Pyrmont: Fahrzeugaufbereitung, KFZ Werkstatt, Reifenservice, Folierung, Schlüsselservice und KFZ Gutachten.">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
@@ -17,7 +18,7 @@
         </a>
     </div>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">☰</button>
 
     <nav id="navMenu">
         <ul>
@@ -29,17 +30,19 @@
     </nav>
 </header>
 
+<main>
+
 <section class="hero" id="home">
     <div class="hero-overlay">
         <div class="hero-content">
-            <span class="hero-badge">KFZ Werkstatt • Aufbereitung • Folierung</span>
+            <span class="hero-badge">KFZ Werkstatt • Aufbereitung • Reifenservice • Folierung</span>
 
             <h1>CarModPlaza</h1>
 
             <p>
-                Ihr professioneller Partner für Fahrzeugaufbereitung,
-                KFZ-Service, Reifenservice, Folierung, Schlüsselservice
-                und KFZ Gutachten in Bad Pyrmont.
+                Professionelle Fahrzeugaufbereitung, zuverlässiger KFZ-Service,
+                Reifenservice, Folierung, Schlüsselservice und KFZ Gutachten
+                in Bad Pyrmont.
             </p>
 
             <div class="hero-buttons">
@@ -54,9 +57,8 @@
     <div class="container intro-box">
         <h2>Premium Service für Ihr Fahrzeug</h2>
         <p>
-            Bei CarModPlaza erhalten Sie moderne Fahrzeugpflege,
-            zuverlässigen Werkstattservice und professionelle Lösungen
-            rund um Ihr Auto – alles aus einer Hand.
+            Bei CarModPlaza erhalten Sie professionelle Autopflege,
+            moderne Werkstatt-Leistungen und zuverlässige Lösungen rund um Ihr Fahrzeug.
         </p>
     </div>
 </section>
@@ -67,25 +69,25 @@
 
         <div class="services-grid">
 
-            <a href="#exterior-wash" class="service-link">
+            <a href="#fahrzeugaufbereitung" class="service-link">
                 <div class="card">
-                    <img src="{% static 'images/gallery/exterior-wash.png' %}" alt="Aufwertung und Pflege">
-                    <h3>Aufwertung & Pflege</h3>
-                    <p>Außenreinigung, Innenreinigung, Politur und Keramikversiegelung.</p>
+                    <img src="{% static 'images/gallery/fahrzeugaufbereitung.jpg' %}" alt="Fahrzeugaufbereitung">
+                    <h3>Fahrzeugaufbereitung</h3>
+                    <p>Innenreinigung, Außenreinigung, Politur, Lackpflege und Keramikversiegelung.</p>
                     <span class="more-btn">Mehr ansehen</span>
                 </div>
             </a>
 
-            <a href="#inspection" class="service-link">
+            <a href="#kfz-werkstatt" class="service-link">
                 <div class="card">
-                    <img src="{% static 'images/gallery/inspection.png' %}" alt="KFZ Werkstatt">
+                    <img src="{% static 'images/gallery/kfz-werkstatt.jpg' %}" alt="KFZ Werkstatt">
                     <h3>KFZ Werkstatt</h3>
-                    <p>Inspektion, Ölwechsel, Bremsen-Service, Diagnose und Reparaturen.</p>
+                    <p>Inspektion, Diagnose, Ölwechsel, Bremsen-Service, Wartung und Reparaturen.</p>
                     <span class="more-btn">Mehr ansehen</span>
                 </div>
             </a>
 
-            <a href="#tire-service" class="service-link">
+            <a href="#reifenservice" class="service-link">
                 <div class="card">
                     <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
                     <h3>Reifenservice</h3>
@@ -94,7 +96,7 @@
                 </div>
             </a>
 
-            <a href="#wrapping" class="service-link">
+            <a href="#folierung" class="service-link">
                 <div class="card">
                     <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
                     <h3>Folierung</h3>
@@ -103,20 +105,20 @@
                 </div>
             </a>
 
-            <a href="#key-service" class="service-link">
+            <a href="#schluesselservice" class="service-link">
                 <div class="card">
                     <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
                     <h3>Schlüsselservice</h3>
-                    <p>Autoschlüssel, Ersatzschlüssel, Reparatur und Programmierung.</p>
+                    <p>Autoschlüssel, Ersatzschlüssel, Schlüsselreparatur und Programmierung.</p>
                     <span class="more-btn">Mehr ansehen</span>
                 </div>
             </a>
 
-            <a href="#car-appraisal" class="service-link">
+            <a href="#kfz-gutachten" class="service-link">
                 <div class="card">
                     <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
                     <h3>KFZ Gutachten</h3>
-                    <p>Fahrzeugbewertung, Unfallgutachten und Schadengutachten.</p>
+                    <p>Fahrzeugbewertung, Unfallgutachten, Schadengutachten und Kostenvoranschläge.</p>
                     <span class="more-btn">Mehr ansehen</span>
                 </div>
             </a>
@@ -131,62 +133,62 @@
 
         <div class="gallery-grid">
 
-            <div class="gallery-item" id="exterior-wash">
-                <img src="{% static 'images/gallery/exterior-wash.png' %}" alt="Außenreinigung">
-                <h3>Außenreinigung</h3>
+            <div class="gallery-item" id="fahrzeugaufbereitung">
+                <img src="{% static 'images/gallery/fahrzeugaufbereitung.jpg' %}" alt="Fahrzeugaufbereitung">
+                <h3>Fahrzeugaufbereitung</h3>
             </div>
 
-            <div class="gallery-item" id="interior-cleaning">
+            <div class="gallery-item" id="kfz-werkstatt">
+                <img src="{% static 'images/gallery/kfz-werkstatt.jpg' %}" alt="KFZ Werkstatt">
+                <h3>KFZ Werkstatt</h3>
+            </div>
+
+            <div class="gallery-item" id="innenreinigung">
                 <img src="{% static 'images/gallery/interior-cleaning.png' %}" alt="Innenreinigung">
                 <h3>Innenreinigung</h3>
             </div>
 
-            <div class="gallery-item" id="polishing">
+            <div class="gallery-item" id="politur">
                 <img src="{% static 'images/gallery/polishing.png' %}" alt="Politur">
                 <h3>Politur</h3>
             </div>
 
-            <div class="gallery-item" id="ceramic-coating">
+            <div class="gallery-item" id="keramikversiegelung">
                 <img src="{% static 'images/gallery/ceramic-coating.png' %}" alt="Keramikversiegelung">
                 <h3>Keramikversiegelung</h3>
             </div>
 
-            <div class="gallery-item" id="inspection">
-                <img src="{% static 'images/gallery/inspection.png' %}" alt="Inspektion">
-                <h3>Inspektion</h3>
-            </div>
-
-            <div class="gallery-item" id="oil-change">
+            <div class="gallery-item" id="oelwechsel">
                 <img src="{% static 'images/gallery/oil-change.png' %}" alt="Ölwechsel">
                 <h3>Ölwechsel</h3>
             </div>
 
-            <div class="gallery-item" id="brake-service">
+            <div class="gallery-item" id="bremsen-service">
                 <img src="{% static 'images/gallery/brake-service.png' %}" alt="Bremsen-Service">
                 <h3>Bremsen-Service</h3>
             </div>
 
-            <div class="gallery-item" id="tire-service">
+            <div class="gallery-item" id="reifenservice">
                 <img src="{% static 'images/gallery/tire-service.png' %}" alt="Reifenservice">
                 <h3>Reifenservice</h3>
             </div>
 
-            <div class="gallery-item" id="wrapping">
+            <div class="gallery-item" id="folierung">
                 <img src="{% static 'images/gallery/wrapping.png' %}" alt="Folierung">
                 <h3>Folierung</h3>
             </div>
 
-            <div class="gallery-item" id="key-service">
+            <div class="gallery-item" id="schluesselservice">
                 <img src="{% static 'images/gallery/key-service.png' %}" alt="Schlüsselservice">
                 <h3>Schlüsselservice</h3>
             </div>
 
-            <div class="gallery-item" id="car-appraisal">
+            <div class="gallery-item" id="kfz-gutachten">
                 <img src="{% static 'images/gallery/car-appraisal.png' %}" alt="KFZ Gutachten">
                 <h3>KFZ Gutachten</h3>
             </div>
 
-            <div class="gallery-item" id="repairs">
+            <div class="gallery-item" id="reparaturen">
                 <img src="{% static 'images/gallery/repairs.png' %}" alt="Reparaturen">
                 <h3>Reparaturen</h3>
             </div>
@@ -210,18 +212,18 @@
             <div class="contact-info">
 
                 <div class="contact-row">
-                    <span>📧</span>
-                    <div>
-                        <strong>E-Mail</strong><br>
-                        <a href="mailto:carmodplaza@gmail.com">carmodplaza@gmail.com</a>
-                    </div>
-                </div>
-
-                <div class="contact-row">
                     <span>📞</span>
                     <div>
                         <strong>Telefon</strong><br>
                         <a href="tel:+4915565708187">+49 155 65708187</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <span>📧</span>
+                    <div>
+                        <strong>E-Mail</strong><br>
+                        <a href="mailto:carmodplaza@gmail.com">carmodplaza@gmail.com</a>
                     </div>
                 </div>
 
@@ -254,6 +256,8 @@
         </div>
     </div>
 </section>
+
+</main>
 
 <a href="tel:+4915565708187" class="floating-call">📞</a>
 
